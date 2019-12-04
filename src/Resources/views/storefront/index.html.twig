@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_main_inner %}
+    <div class="container-main container">
+        <h1>Store-Plugins</h1>
+        {% for plugin in StorePlugins %}
+            <table class="table table-striped product-detail-properties-table">
+                <tbody>
+                <tr class="properties-row">
+                    <th class="properties-label">Titel:</th>
+                    <td class="properties-value">{{ plugin.getTitle() }}</td>
+                </tr>
+                <tr class="properties-row">
+                    <th class="properties-label">Kauflink:</th>
+                    <td class="properties-value">
+                        <a href="{{ plugin.getBuyLink() }}" target="_blank">Kaufen</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        {% endfor %}
+    </div>
+{% endblock %}

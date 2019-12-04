@@ -1,0 +1,29 @@
+{
+    "name": "swag/store-plugin",
+    "description": "StorePlugin Example",
+    "version": "v1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Eiling"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "shopware/storefront": "*"
+    },
+    "type": "shopware-platform-plugin",
+    "autoload": {
+        "psr-4": {
+            "Swag\\StorePlugin\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Swag\\StorePlugin\\StorePlugin",
+        "copyright": "(C) Thomas Eiling",
+        "label": {
+            "de-DE": "Beispiel fürs die Plugin Entwicklung",
+            "en-GB": "Example for developing plugins"
+        }
+    }
+}
