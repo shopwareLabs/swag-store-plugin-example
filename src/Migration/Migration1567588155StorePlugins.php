@@ -14,7 +14,7 @@ class Migration1567588155StorePlugins extends MigrationStep
 
     public function update(Connection $connection): void
     {
-        $connection->executeQuery(
+        $connection->executeUpdate(
             'CREATE TABLE IF NOT EXISTS `store_plugins`
             (
                 id BINARY(16) NOT NULL,
